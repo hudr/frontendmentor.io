@@ -88,6 +88,7 @@ a {
 }
 
 .image__overlay:hover {
+    cursor: pointer;
     opacity: 1;
 }
 
@@ -111,6 +112,7 @@ a {
 .card__title:hover,
 .author__name:hover {
     color: var(--colors-cyan);
+    cursor: pointer;
 }
 
 .card__description,
