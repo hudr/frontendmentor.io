@@ -157,6 +157,10 @@ a {
     font-weight: 400;
 }
 
+.author__name {
+    color: var(--colors-white);
+}
+
 .author__image {
     width: 10%;
     border: 0.1rem solid var(--colors-white);
