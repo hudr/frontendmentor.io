@@ -155,6 +155,7 @@ a {
     align-items: center;
     font-size: 0.94rem;
     font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .author__name {
