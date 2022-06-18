@@ -1,0 +1,165 @@
+/* Google Font - Outfit */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* Variables */
+:root {
+    /* Colors */
+    --colors-white: hsl(0, 0%, 100%);
+    --colors-soft-blue: hsl(215, 51%, 70%);
+    --colors-cyan: hsl(178, 100%, 50%);
+    --colors-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --color-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --color-very-dark-blue-line: hsl(215, 32%, 27%);
+    /* Fonts */
+    --fonts-main: "Outfit", sans-serif;
+}
+
+/* Global Rules */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--colors-very-dark-blue-main-bg);
+    color: var(--colors-dark-blue);
+    font-family: var(--fonts-main);
+    cursor: default;
+}
+
+/* Reset Some Elements */
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container__card {
+    max-width: 20rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-very-dark-blue-card-bg);
+}
+
+.card__image {
+    position: relative;
+    width: 100%;
+}
+
+.image__default {
+    display: block;
+    width: 100%;
+}
+
+.overlay__icon {
+    width: 15%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background: rgba(0, 255, 247, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__default,
+.card__title,
+.card__description {
+    margin-bottom: 1.2rem;
+}
+
+.image__default {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card__title {
+    color: var(--colors-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card__title:hover,
+.author__name:hover {
+    color: var(--colors-cyan);
+}
+
+.card__description,
+.card__author,
+.information__days {
+    color: var(--colors-soft-blue);
+    font-weight: 300;
+}
+
+.card__information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information__price,
+.information__days {
+    display: flex;
+    align-items: center;
+}
+
+.information__price > img,
+.information__days > img {
+    margin-right: 0.4rem;
+}
+
+.information__price {
+    color: var(--colors-cyan);
+    font-weight: 400;
+}
+
+.card__horizontal-line {
+    margin: 1rem 0;
+    border: 0;
+    height: 1px;
+    background-color: var(--color-very-dark-blue-line);
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    font-size: 0.94rem;
+    font-weight: 400;
+}
+
+.author__image {
+    width: 10%;
+    border: 0.1rem solid var(--colors-white);
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}

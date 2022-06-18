@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- specifies the character encoding for the HTML document -->
+  <meta charset="UTF-8">
+  <!-- Displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Provides a brief summary of a web page -->
+  <meta name="description" content="This is a solution to the Meet landing page challenge on Frontend Mentor. 
+     The purpose of this challenge is to improve my coding skills by building realistic projects.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <!-- CSS File  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body>
+  <main class="container">
+    <div class="container__card">
+
+      <div class="card__image">
+        <a href="#">
+          <img class="image__default" src="assets/image-equilibrium.jpg" alt="Um dado com cores futurísticas">
+
+          <div class="image__overlay">
+            <img class="overlay__icon" src="assets/icon-view.svg" alt="Ícone de um olho">
+          </div>
+        </a>
+      </div>
+
+      <h1 class="card__title">
+        <a href="#">Equilibrium #3429</a>
+      </h1>
+
+      <p class="card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <div class="card__information">
+        <div class="information__price">
+          <img src="assets/icon-ethereum.svg" alt="Ícone moeda Ethereum">
+          <p>0.041 ETH</p>
+        </div>
+
+        <div class="information__days">
+          <img src="assets/icon-clock.svg" alt="Ícone de relógio">
+          <p>3 days left</p>
+        </div>
+      </div>
+
+      <hr class="card__horizontal-line" />
+
+      <div class="card__author">
+        <img class="author__image" src="assets/image-avatar.png" alt="Avatar de Jules Wyvern">
+        <p>Creation of <a class="author__name" href="#">Jules Wyvern</span></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
